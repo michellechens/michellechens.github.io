@@ -10,6 +10,15 @@ html, body {
     height: 100%;
     text-align: center;
     overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Background */
@@ -23,27 +32,27 @@ section {
 }
 section .color {
     position: absolute;
-    filter: blur(200px);
+    filter: blur(150px);
 }
 section .color:nth-child(1) {
     top: 0;
     width: 80%;
     height: 40%;
-    background: #ff359b;
+    background: #ff99cc;
 }
 section .color:nth-child(2) {
     bottom: 0;
     left: 5%;
     width: 60%;
     height: 50%;
-    background: #fffd87;
+    background: #fffd99;
 }
 section .color:nth-child(3) {
     bottom: 5%;
     right: 5%;
     width: 50%;
     height: 40%;
-    background: #00d2ff;
+    background: #99ecff;
 }
 
 /* Entry Button */
@@ -75,8 +84,8 @@ section .color:nth-child(3) {
     color: #fff;
 }
 .entry-btn:hover .shape {
-    -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
+    -webkit-animation: draw 0.5s linear forwards;
+    animation: draw 0.5s linear forwards;
 }
 @keyframes draw {
     0% {
