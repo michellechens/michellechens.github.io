@@ -32,7 +32,7 @@ section {
 }
 section .color {
     position: absolute;
-    filter: blur(150px);
+    filter: blur(200px);
 }
 section .color:nth-child(1) {
     top: 0;
